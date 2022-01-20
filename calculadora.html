@@ -102,6 +102,9 @@
     </div>
     <script>
         function insert(num){
+            if(document.getElementById('resultado').innerHTML == "Waiting..."){
+                limpar();
+            }
             var numero = document.getElementById('resultado').innerHTML;
             document.getElementById('resultado').innerHTML = numero + num;
         }
@@ -119,7 +122,7 @@
                 document.getElementById('resultado').innerHTML = eval(resultado);
             }
             else{
-                document.getElementById('resultado').innerHTML = "Waiting..."; //corrigir erro de continuar na calculadora
+                document.getElementById('resultado').innerHTML = "Waiting..."; /
             }
         }
     </script>
